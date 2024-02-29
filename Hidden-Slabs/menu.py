@@ -30,7 +30,7 @@ class Menu:
         self.welcome_button_size = 250
         self.welcome_buttons = pygame.sprite.Group()
         self.welcome_button_menu = Button("menu", 100, self.welcome_button_y)
-        self.welcome_button_tutoriel = Button("tuto", 650, self.welcome_button_y)
+        self.welcome_button_tutoriel = Button("tuto", 625, self.welcome_button_y)
         self.welcome_buttons.add(self.welcome_button_menu, self.welcome_button_tutoriel)
         for b in self.welcome_buttons:
             b.re_size(self.welcome_button_size, self.welcome_button_size)

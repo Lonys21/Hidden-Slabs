@@ -17,3 +17,8 @@ class Button(pygame.sprite.Sprite):
                                                   (w, h))
         self.image_press = pygame.transform.scale(self.image_press, (w, h))
         self.image = self.image_idle
+        x = self.rect.x
+        y = self.rect.y
+        self.rect = self.image.get_rect()
+        self.rect.x = x
+        self.rect.y = y
